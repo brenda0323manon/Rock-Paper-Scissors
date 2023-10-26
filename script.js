@@ -1,6 +1,7 @@
 ///Memory varible 
 let playerScore = 0;
 let computerScore = 0;
+let winningNumber  = 10;
 const playerNumber_span = document.querySelector('.Player-number');
 const computerNumber_span = document.querySelector('.Computer-number');
 const scoreNumber = document.querySelector('.Score-number');
@@ -8,6 +9,7 @@ const Text_p = document.querySelector('.Text >p');
 const scissors = document.querySelector('.scissors');
 const rock = document.querySelector('.rock');
 const paper = document.querySelector('.paper');
+let winner = document.querySelector('.winner');
 
 ///The options the computer has, with every number representing an option r, p, s
 function getcomputerChoice() {
@@ -31,6 +33,11 @@ function win(playerchoice, computerchoice) {
     playerNumber_span.innerHTML = playerScore;
     computerNumber_span.innerHTML = computerScore;
     Text_p.innerHTML = convertToWord(playerchoice) + " beats " + convertToWord(computerchoice) + ". You win!";
+    if (playerScore === winningNumber){
+        winner.innerHTML = ("Congratulations! You won the game!");
+    } else if (computerScore === winningNumber){
+        winner.innerHTML = ("Sorry, you lost the game.");
+    }
 }
 
 ///Allows to display lose message
@@ -39,6 +46,11 @@ function lose(playerChoice, computerChoice) {
     playerNumber_span.innerHTML = playerScore;
     computerNumber_span.innerHTML = computerScore;
     Text_p.innerHTML = convertToWord(playerChoice) + " loses to " + convertToWord(computerChoice) + ". You lost!!";
+    if (playerScore === winningNumber){
+        winner,innerHTML = ("Congratulations! You won the game!");
+    } else if (computerScore === winningNumber){
+        winner.innerHTML = ("Sorry, you lost the game.");
+    }
 }
 
 
@@ -48,6 +60,8 @@ function tie(playerChoice, computerChoice) {
     computerNumber_span.innerHTML = computerScore;
     Text_p.innerHTML = convertToWord(playerChoice) + " equals " + convertToWord(computerChoice) + ". It's a tie!";
 }
+
+
 
 ///Shows the possibilties of win, lose, and tie with the switch case function 
 function game(playerChoice) {
@@ -83,7 +97,7 @@ function game(playerChoice) {
 
     paper.addEventListener('click', function() {
     game("p")
-
    })
 }
+
 main();
