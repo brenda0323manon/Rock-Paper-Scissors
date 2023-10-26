@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel=stylesheet href="page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Exo+2:wght@200&family=Lilita+One&family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+
+    <header>
+        <button class="clear_btn" onclick="window.location.reload();">Again!</button>
+        <h1 class="heading">Rock, Paper, Scissors</h1>
+    </header>
+    
+    <main>
+        <section class="Score-number">
+            <p class="Player_Score">Player:</p>
+            <span class="Player-number">0</span>
+            <p class="Computer_Score">Computer:</p>
+            <span class="Computer-number">0</span>
+        </section>
+        <section class="Text">
+            <p class="message">Start Game!!</p>
+            <p class="Timer">20 
+                <span>sec.</span>
+            </p>
+        </section>
+        <section class="hand-signs">
+            <button><img src="scissors.png"  class="hand scissors"  alt="scissors hand gesture"></button>
+            <button><img src="paper.png"  class="hand paper" alt="paper hand gesture"></button>
+            <button><img src="rock.png" class="hand rock" alt="rock hand gesture"></button>
+        </section>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

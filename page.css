@@ -1,0 +1,156 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    background-image: url(gradiant.jpeg)
+}
+
+.heading {
+    font-size: 10vh;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.clear_btn {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 1%;
+    font-size: 150%;
+    letter-spacing: 5px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lilita One', sans-serif;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.Score-number {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.Player_Score, .Computer_Score, .Player-number, .Computer-number {
+    font-size: 250%;
+    color: white;
+    padding: .75%;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lilita One', sans-serif;
+}  
+
+.Text {
+text-align: center;
+}
+
+.message {
+    font-size: 300%;
+    word-spacing: 30%; 
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.Timer {
+    margin-top: 10vh;
+    font-size: 5vh;
+    word-spacing: 1vw;   
+    color: white;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.hand-signs {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    padding-bottom: 9vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}   
+
+.hand {
+    height: 15vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 280px) {
+    .clear_btn {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .heading{
+        font-size: 6vh;
+        padding-top: 3vh ;
+    }
+
+    .Player-number, .Computer-number, .Player_Score, .Computer_Score {
+        font-size: 150%;
+    }
+    
+    .message {
+        font-size: 150%;
+        padding-top: 4vh;
+    }
+
+    .Timer {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .clear_btn {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .heading{
+        font-size: 6vh;
+        padding-top: 3vh ;
+    }
+
+    .Player-number, .Computer-number, .Player_Score, .Computer_Score {
+        font-size: 150%;
+    }
+    
+    .message {
+        font-size: 150%;
+        padding-top: 4vh;
+    }
+
+    .Timer {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .clear_btn {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    .heading{
+        font-size: 6vh;
+        padding-top: 3vh ;
+    }
+
+    .Player-number, .Computer-number, .Player_Score, .Computer_Score {
+        font-size: 200%;
+    }
+   
+}
