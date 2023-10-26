@@ -86,6 +86,4 @@ function game(playerChoice) {
 
    })
 }
-
-
 main();

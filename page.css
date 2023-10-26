@@ -53,6 +53,7 @@ text-align: center;
 }
 
 .message {
+    padding-bottom: 3%;
     font-size: 300%;
     word-spacing: 30%; 
     color: white;
@@ -131,6 +132,7 @@ text-align: center;
     .message {
         font-size: 150%;
         padding-top: 4vh;
+        padding-bottom: 10%;
     }
 
     .Timer {
@@ -152,5 +154,9 @@ text-align: center;
     .Player-number, .Computer-number, .Player_Score, .Computer_Score {
         font-size: 200%;
     }
-   
-}
+    
+    .message {
+     padding-bottom: 15%;
+    }
+    
+}   
