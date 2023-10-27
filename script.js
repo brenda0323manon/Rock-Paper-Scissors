@@ -11,6 +11,7 @@ const rock = document.querySelector('.rock');
 const paper = document.querySelector('.paper');
 let winner = document.querySelector('.winner');
 
+
 ///The options the computer has, with every number representing an option r, p, s
 function getcomputerChoice() {
     const choices = ['r', 'p', 's']
@@ -35,8 +36,14 @@ function win(playerchoice, computerchoice) {
     Text_p.innerHTML = convertToWord(playerchoice) + " beats " + convertToWord(computerchoice) + ". You win!";
     if (playerScore === winningNumber){
         winner.innerHTML = ("Congratulations! You won the game!");
+        setTimeout(function() {
+            resetGame();
+        }, 3000); 
     } else if (computerScore === winningNumber){
         winner.innerHTML = ("Sorry, you lost the game.");
+        setTimeout(function() {
+            resetGame();
+        }, 3000); 
     }
 }
 
@@ -48,11 +55,17 @@ function lose(playerChoice, computerChoice) {
     Text_p.innerHTML = convertToWord(playerChoice) + " loses to " + convertToWord(computerChoice) + ". You lost!!";
     if (playerScore === winningNumber){
         winner,innerHTML = ("Congratulations! You won the game!");
+        setTimeout(function() {
+            resetGame();
+        }, 3000); 
     } else if (computerScore === winningNumber){
         winner.innerHTML = ("Sorry, you lost the game.");
+        setTimeout(function() {
+            resetGame();
+        }, 3000); 
     }
+    
 }
-
 
 ///Allows to display tie message
 function tie(playerChoice, computerChoice) {
@@ -61,7 +74,15 @@ function tie(playerChoice, computerChoice) {
     Text_p.innerHTML = convertToWord(playerChoice) + " equals " + convertToWord(computerChoice) + ". It's a tie!";
 }
 
-
+///resets Game autamtically 
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    playerNumber_span.innerHTML = playerScore;
+    computerNumber_span.innerHTML = computerScore;
+    winner.innerHTML = "";
+    // Text_p.innerHTML = "Let's play! Choose Rock, Paper, or Scissors.";
+}
 
 ///Shows the possibilties of win, lose, and tie with the switch case function 
 function game(playerChoice) {
