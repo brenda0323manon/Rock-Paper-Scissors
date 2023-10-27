@@ -81,7 +81,6 @@ function resetGame() {
     playerNumber_span.innerHTML = playerScore;
     computerNumber_span.innerHTML = computerScore;
     winner.innerHTML = "";
-    // Text_p.innerHTML = "Let's play! Choose Rock, Paper, or Scissors.";
 }
 
 ///Shows the possibilties of win, lose, and tie with the switch case function 
